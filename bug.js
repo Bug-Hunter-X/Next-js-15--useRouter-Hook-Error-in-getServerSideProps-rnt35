@@ -1,0 +1,1 @@
+In Next.js 15, the use of `next/navigation`'s `useRouter` hook within a `getServerSideProps` function can lead to unexpected behavior or errors.  This is because `useRouter` is a client-side hook and is not available during server-side rendering (SSR). Attempting to access it in `getServerSideProps` will result in an error or undefined behavior.
